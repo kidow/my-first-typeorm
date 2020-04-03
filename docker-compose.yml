@@ -7,8 +7,8 @@ services:
     restart: always
     environment:
       - MYSQL_USER=root
-      - MYSQL_PASSWORD=******
-      - MYSQL_ROOT_PASSWORD=******
+      - MYSQL_PASSWORD=1234
+      - MYSQL_ROOT_PASSWORD=1234
       - MYSQL_DATABASE=test
       - TZ=Asiz/Seoul
     ports:

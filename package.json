@@ -3,16 +3,23 @@
   "version": "0.0.1",
   "description": "Awesome project developed with TypeORM.",
   "devDependencies": {
-    "ts-node": "3.3.0",
+    "@types/faker": "4.1.11",
+    "@types/jest": "25.1.4",
     "@types/node": "^8.0.29",
+    "faker": "4.1.0",
+    "jest": "25.2.6",
+    "ts-jest": "25.3.0",
+    "ts-node": "3.3.0",
     "typescript": "3.3.3333"
   },
   "dependencies": {
-    "typeorm": "0.2.24",
+    "bcrypt": "4.0.1",
+    "mysql": "^2.14.1",
     "reflect-metadata": "^0.1.10",
-    "mysql": "^2.14.1"
+    "typeorm": "0.2.24"
   },
   "scripts": {
-    "dev": "ts-node src/index.ts"
+    "dev": "ts-node src/index.ts",
+    "test": "jest --watch --runInBand --verbose"
   }
 }
