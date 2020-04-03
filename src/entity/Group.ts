@@ -4,7 +4,8 @@ import {
   PrimaryGeneratedColumn,
   Column,
   ManyToMany,
-  JoinTable
+  JoinTable,
+  CreateDateColumn
 } from 'typeorm'
 import { User } from './User'
 
@@ -15,6 +16,9 @@ export class Group extends BaseEntity {
 
   @Column()
   name: string
+
+  @CreateDateColumn()
+  createdAt: Date
 
   @ManyToMany(
     type => User,

@@ -20,6 +20,9 @@ export class Post extends BaseEntity {
   @Column()
   content: string
 
+  @Column({ type: Date, nullable: true, default: null })
+  deletedAt: Date | null
+
   @CreateDateColumn()
   createdAt: Date
 
